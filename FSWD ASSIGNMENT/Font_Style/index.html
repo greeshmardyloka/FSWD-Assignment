@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Style</title>
+</head>
+<body>
+
+<p id="text">This is a sample paragraph.</p>
+
+<select onchange="changeFont(this.value)">
+    <option value="Arial">Arial</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Verdana">Verdana</option>
+</select>
+
+<script>
+function changeFont(font) {
+    document.getElementById("text").style.fontFamily = font;
+}
+</script>
+
+</body>
+</html>
